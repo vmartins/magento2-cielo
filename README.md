@@ -11,8 +11,8 @@ Esse módulo permite ao cliente utilizar a solução de pagamentos da Cielo dire
 Requisitos
 ----------
 ---
- - [Magento] Community 2.0 | 2.1
- - [PHP] 5.5.0+
+ - [Magento] Community 2.3
+ - [PHP] 7.2+
  - [API-3.0-PHP]
 
 
@@ -21,7 +21,8 @@ Instalação
 Navegue até o diretório raíz da sua instalação do Magento 2 e siga os seguintes passos:
 
 1. Instale via packagist
-   - ```composer require setor7soft/magento2-cielo```
+   - ```composer config repositories.cielo vcs https://github.com/vmartins/magento2-cielo```
+   - ```composer require vmartins/magento2-cielo```
        - Neste momento, podem ser solicitadas suas credenciais de autenticação do Magento. Caso tenha alguma dúvida, há uma descrição de como proceder nesse [link da documentação oficial](http://devdocs.magento.com/guides/v2.0/install-gde/prereq/connect-auth.html).
 2. Execute os comandos:
    - ```php bin/magento setup:upgrade```
