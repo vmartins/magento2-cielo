@@ -8,7 +8,7 @@ namespace Setor7\Cielo\Model;
 /**
  * Class ConfigProvider
  */
-final class Cielo extends \Magento\Payment\Model\Method\Cc
+class Cielo extends \Magento\Payment\Model\Method\Cc
 {
     const METHOD_CODE = 'cielo';
 
