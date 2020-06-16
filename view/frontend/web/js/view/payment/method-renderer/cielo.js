@@ -113,10 +113,14 @@ function (_, Component, creditCardData, cardNumberValidator, quote, $t, $, addit
               var number_installments = window.checkoutConfig.payment[this.getCode()].number_installments;
               var min_total_installments = window.checkoutConfig.payment[this.getCode()].min_total_installments;
 
-              if (Math.round(grandTotal/min_total_installments) >= number_installments) {
+              if (Math.floor(grandTotal/min_total_installments) >= number_installments) {
                 installments = number_installments
               } else {
-                installments = Math.round(grandTotal/min_total_installments)
+                installments = Math.floor(grandTotal/min_total_installments)
+              }
+
+              if (installments < 1) {
+                installments = 1
               }
 
               function roundNumber(num, scale) {
