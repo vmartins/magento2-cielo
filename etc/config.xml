@@ -23,7 +23,7 @@
               <can_use_internal>1</can_use_internal>
               <is_gateway>1</is_gateway>
               <sort_order>1</sort_order>
-              <paymentInfoKeys>cc_type,cc_number,Status,Codigo de Retorno,Messagem de Retorno,Parcelas,Tid,Id de Pagamento,Titular do Cartão,Numero do Cartão,Bandeira,Modo</paymentInfoKeys>
+              <paymentInfoKeys>cc_type,cc_number,Status,Codigo de Retorno,Messagem de Retorno,Parcelas,Tid,Id de Pagamento,Titular do Cartão,Numero do Cartão,Bandeira,Modo,Codigo de Autorizacao</paymentInfoKeys>
               <privateInfoKeys>cc_type,cc_number,Codigo de Retorno,Messagem de Retorno,Tid,Modo</privateInfoKeys>
             </cielo>
         </payment>

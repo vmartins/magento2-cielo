@@ -59,6 +59,7 @@ class PaymentDetailsHandler implements HandlerInterface
       $payment->setAdditionalInformation("Parcelas", $response_payment->getInstallments());
       $payment->setAdditionalInformation("Tid", $response_payment->getTid());
       $payment->setAdditionalInformation("Id de Pagamento", $response_payment->getPaymentId());
+      $payment->setAdditionalInformation("Codigo de Autorizacao", $response_payment->getAuthorizationCode());
 
       /** @var $payment \Magento\Sales\Model\Order\Payment */
       //$payment->setTransactionId($response[self::TXN_ID]);
