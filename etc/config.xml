@@ -16,6 +16,7 @@
               <active>1</active>
               <order_status>pending_payment</order_status>
               <payment_action>authorize</payment_action>
+              <force_capture>false</force_capture>
               <can_authorize>1</can_authorize>
               <can_capture>1</can_capture>
               <can_void>1</can_void>
@@ -23,8 +24,8 @@
               <can_use_internal>1</can_use_internal>
               <is_gateway>1</is_gateway>
               <sort_order>1</sort_order>
-              <paymentInfoKeys>cc_type,cc_number,Status,Codigo de Retorno,Messagem de Retorno,Parcelas,Tid,Id de Pagamento,Titular do Cartão,Numero do Cartão,Bandeira,Modo,Codigo de Autorizacao</paymentInfoKeys>
-              <privateInfoKeys>cc_type,cc_number,Codigo de Retorno,Messagem de Retorno,Tid,Modo</privateInfoKeys>
+              <paymentInfoKeys>cc_type,cc_number,Status,Codigo de Retorno,Messagem de Retorno,Parcelas,Tid,Id de Pagamento,Titular do Cartão,Numero do Cartão,Bandeira,Modo,Codigo de Autorizacao,Total Capturado</paymentInfoKeys>
+              <privateInfoKeys>cc_type,cc_number,Codigo de Retorno,Messagem de Retorno,Tid,Modo,Codigo de Autorizacao,Total Capturado,Codigo de Autorizacao,Total Capturado</privateInfoKeys>
             </cielo>
         </payment>
     </default>

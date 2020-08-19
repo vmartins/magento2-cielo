@@ -32,6 +32,7 @@ class Config extends \Magento\Payment\Gateway\Config\Config
     const INSTALLMENTS = 'installments';
     const NUMBER_INSTALLMENTS = 'number_installments';
     const MIN_TOTAL_INSTALLMENTS = 'min_total_installments';
+    const FORCE_CAPTURE = 'force_capture';
 
     /**
      * Return the country specific card type config
@@ -213,5 +214,13 @@ class Config extends \Magento\Payment\Gateway\Config\Config
     public function isActive()
     {
         return (bool) $this->getValue(self::KEY_ACTIVE);
+    }
+
+    /**
+     * @return bool
+     */
+    public function getForceCapture()
+    {
+        return (bool) $this->getValue(Config::FORCE_CAPTURE);
     }
 }

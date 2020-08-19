@@ -104,9 +104,9 @@ abstract class AbstractPaymentDataBuilder implements BuilderInterface
       return self::INTEREST_BY_MERCHANT;
     }
 
-    public function forceCapture(){
-      //TODO: Colocar essa opção nas configurações
-      return false;
+    public function forceCapture()
+    {
+      return $this->config->getForceCapture();
     }
 
 

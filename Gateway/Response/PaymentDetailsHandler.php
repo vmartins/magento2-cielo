@@ -61,6 +61,15 @@ class PaymentDetailsHandler implements HandlerInterface
       $payment->setAdditionalInformation("Id de Pagamento", $response_payment->getPaymentId());
       $payment->setAdditionalInformation("Codigo de Autorizacao", $response_payment->getAuthorizationCode());
 
+      if ($response_payment->getCapture()) {
+        $capturedAmount = $response_payment->getCapturedAmount();
+        if ($capturedAmount) {
+          $capturedAmount = $capturedAmount / 100;
+        }
+
+        $payment->setAdditionalInformation("Total Capturado", $capturedAmount);
+      }
+
       /** @var $payment \Magento\Sales\Model\Order\Payment */
       //$payment->setTransactionId($response[self::TXN_ID]);
       $payment->setIsTransactionClosed(false)->setTransactionAdditionalInfo('Reponse',$response_obj->jsonSerialize());
