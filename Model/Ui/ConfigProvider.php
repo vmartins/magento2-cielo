@@ -122,7 +122,7 @@ final class ConfigProvider implements ConfigProviderInterface
             if ($placeholder) {
                 list($width, $height) = getimagesize($asset->getSourceFile());
                 $icon = [
-                    'url' => $asset->getUrl(),
+                    // 'url' => $asset->getUrl(),
                     'width' => $width,
                     'height' => $height
                 ];
