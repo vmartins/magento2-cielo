@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<mapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/error_mapping.xsd">
+    <message_list>
+        <message code="00" translate="true">Transação autorizada com sucesso.</message>
+        <message code="02" translate="true">Transação não autorizada. Transação referida.</message>
+        <message code="09" translate="true">Transação cancelada parcialmente com sucesso.</message>
+        <message code="11" translate="true">Transação autorizada com sucesso para cartão emitido no exterior</message>
+        <message code="21" translate="true">Cancelamento não efetuado. Transação não localizada.</message>
+        <message code="22" translate="true">Parcelamento inválido. Número de parcelas inválidas.</message>
+        <message code="24" translate="true">Quantidade de parcelas inválido.</message>
+        <message code="60" translate="true">Transação não autorizada.</message>
+        <message code="67" translate="true">Transação não autorizada. Cartão bloqueado para compras hoje.</message>
+        <message code="70" translate="true">Transação não autorizada. Limite excedido/sem saldo.</message>
+        <message code="72" translate="true">Cancelamento não efetuado. Saldo disponível para cancelamento insuficiente.</message>
+        <message code="80" translate="true">Transação não autorizada. Divergencia na data de transação/pagamento.</message>
+        <message code="83" translate="true">Transação não autorizada. Erro no controle de senhas</message>
+        <message code="85" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="89" translate="true">Erro na transação.</message>
+        <message code="90" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="97" translate="true">Valor não permitido para essa transação.</message>
+        <message code="98" translate="true">Sistema/comunicação indisponível.</message>
+        <message code="475" translate="true">Timeout de Cancelamento</message>
+        <message code="999" translate="true">Sistema/comunicação indisponível.</message>
+        <message code="AA" translate="true">Tempo Excedido</message>
+        <message code="AF" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="AG" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="AH" translate="true">Transação não permitida. Cartão de crédito sendo usado com débito. Use a função crédito.</message>
+        <message code="AI" translate="true">Transação não autorizada. Autenticação não foi realizada.</message>
+        <message code="AJ" translate="true">Transação não permitida. Transação de crédito ou débito em uma operação que permite apenas Private Label. Tente novamente selecionando a opção Private Label.</message>
+        <message code="AV" translate="true">Transação não autorizada. Dados Inválidos</message>
+        <message code="BD" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="BL" translate="true">Transação não autorizada. Limite diário excedido.</message>
+        <message code="BM" translate="true">Transação não autorizada. Cartão Inválido</message>
+        <message code="BN" translate="true">Transação não autorizada. Cartão ou conta bloqueado.</message>
+        <message code="BO" translate="true">Transação não permitida. Falha da operação.</message>
+        <message code="BP" translate="true">Transação não autorizada. Conta corrente inexistente.</message>
+        <message code="BP176" translate="true">Transação não permitida.</message>
+        <message code="C1" translate="true">Transação não permitida. Cartão não pode processar transações de débito.</message>
+        <message code="C2" translate="true">Transação não permitida.</message>
+        <message code="C3" translate="true">Transação não permitida.</message>
+        <message code="CF" translate="true">Transação não autorizada.C79:J79 Falha na validação dos dados.</message>
+        <message code="CG" translate="true">Transação não autorizada. Falha na validação dos dados.</message>
+        <message code="DF" translate="true">Transação não permitida. Falha no cartão ou cartão inválido.</message>
+        <message code="DM" translate="true">Transação não autorizada. Limite excedido/sem saldo.</message>
+        <message code="DQ" translate="true">Transação não autorizada. Falha na validação dos dados.</message>
+        <message code="DS" translate="true">Transação não permitida para o cartão</message>
+        <message code="EB" translate="true">Transação não autorizada. Limite diário excedido.</message>
+        <message code="EE" translate="true">Transação não permitida. Valor da parcela inferior ao mínimo permitido.</message>
+        <message code="EK" translate="true">Transação não permitida para o cartão</message>
+        <message code="FC" translate="true">Transação não autorizada. Ligue Emissor</message>
+        <message code="FE" translate="true">Transação não autorizada. Divergencia na data de transação/pagamento.</message>
+        <message code="FF" translate="true">Cancelamento OK</message>
+        <message code="FG" translate="true">Transação não autorizada. Ligue AmEx 08007285090.</message>
+        <message code="GA" translate="true">Aguarde Contato</message>
+        <message code="GD" translate="true">Transação não permitida.</message>
+        <message code="HJ" translate="true">Transação não permitida. Código da operação inválido.</message>
+        <message code="IA" translate="true">Transação não permitida. Indicador da operação inválido.</message>
+        <message code="KA" translate="true">Transação não permitida. Falha na validação dos dados.</message>
+        <message code="KB" translate="true">Transação não permitida. Selecionado a opção incorrente.</message>
+        <message code="KE" translate="true">Transação não autorizada. Falha na validação dos dados.</message>
+        <message code="N7" translate="true">Transação não autorizada. Código de segurança inválido.</message>
+        <message code="U3" translate="true">Transação não permitida. Falha na validação dos dados.</message>
+    </message_list>
+</mapping>

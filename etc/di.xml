@@ -26,6 +26,24 @@
         </arguments>
     </type>
 
+    <!-- Error code mapper -->
+    <virtualType name="Setor7\Cielo\Gateway\ErrorMapper\VirtualConfigReader" type="Magento\Payment\Gateway\ErrorMapper\VirtualConfigReader">
+        <arguments>
+            <argument name="fileName" xsi:type="string">cielo_error_mapping.xml</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Setor7\Cielo\Gateway\ErrorMapper\VirtualMappingData" type="Magento\Payment\Gateway\ErrorMapper\MappingData">
+        <arguments>
+            <argument name="reader" xsi:type="object">Setor7\Cielo\Gateway\ErrorMapper\VirtualConfigReader</argument>
+            <argument name="cacheId" xsi:type="string">cielo_error_mapper</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Setor7\Cielo\Gateway\ErrorMapper\VirtualErrorMessageMapper" type="Magento\Payment\Gateway\ErrorMapper\ErrorMessageMapper">
+        <arguments>
+            <argument name="messageMapping" xsi:type="object">Setor7\Cielo\Gateway\ErrorMapper\VirtualMappingData</argument>
+        </arguments>
+    </virtualType>
+
     <!-- Logger, initialized with SamplePaymentGatewayConfig -->
     <virtualType name="CieloLogger" type="Magento\Payment\Model\Method\Logger">
         <arguments>
@@ -58,6 +76,7 @@
             <argument name="transferFactory" xsi:type="object">Setor7\Cielo\Gateway\Http\TransferFactory</argument>
             <argument name="validator" xsi:type="object">Setor7\Cielo\Gateway\Validator\AuthorizeValidator</argument>
             <argument name="client" xsi:type="object">Setor7\Cielo\Gateway\Http\Client\TransactionAuthorize</argument>
+            <argument name="errorMessageMapper" xsi:type="object">Setor7\Cielo\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
         </arguments>
     </virtualType>
 
@@ -88,6 +107,7 @@
             <argument name="transferFactory" xsi:type="object">Setor7\Cielo\Gateway\Http\TransferFactory</argument>
             <argument name="validator" xsi:type="object">Setor7\Cielo\Gateway\Validator\CaptureCodeValidator</argument>
             <argument name="client" xsi:type="object">Setor7\Cielo\Gateway\Http\Client\TransactionCapture</argument>
+            <argument name="errorMessageMapper" xsi:type="object">Setor7\Cielo\Gateway\ErrorMapper\VirtualErrorMessageMapper</argument>
         </arguments>
     </virtualType>
 

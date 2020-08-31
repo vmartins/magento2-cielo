@@ -22,8 +22,10 @@ class GeneralResponseValidator extends AbstractValidator
      * @param ResultInterfaceFactory $resultFactory
      * @param SubjectReader $subjectReader
      */
-    public function __construct(ResultInterfaceFactory $resultFactory, SubjectReader $subjectReader)
-    {
+    public function __construct(
+        ResultInterfaceFactory $resultFactory,
+        SubjectReader $subjectReader
+    ) {
         parent::__construct($resultFactory);
         $this->subjectReader = $subjectReader;
     }
@@ -48,7 +50,12 @@ class GeneralResponseValidator extends AbstractValidator
             }
         }
 
-        return $this->createResult($isValid, $errorMessages);
+        $errorCodes = [];
+        foreach ($errorMessages as $errorMessage) {
+            $errorCodes[] = trim(array_reverse(explode(':', $errorMessage))[0]);
+        }
+
+        return $this->createResult($isValid, $errorMessages, $errorCodes);
     }
 
     /**
