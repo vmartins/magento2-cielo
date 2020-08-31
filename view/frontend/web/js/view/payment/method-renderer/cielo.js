@@ -277,7 +277,7 @@ function (_, Component, creditCardData, cardNumberValidator, quote, $t, $, addit
                         'value': key,
                         'month': value
                     };
-                });
+                }).splice(0, 12);
             },
 
             /**
@@ -288,7 +288,7 @@ function (_, Component, creditCardData, cardNumberValidator, quote, $t, $, addit
                 return _.map(this.getCcYears(), function (value, key) {
                     return {
                         'value': key,
-                        'year': value
+                        'year': key
                     };
                 });
             },
